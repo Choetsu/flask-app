@@ -15,8 +15,8 @@ Mise en place d'une application Flask avec une base de données Redis dans un cl
 ### Clonez le Répertoire du Projet :
 
 ```
-git clone <url-du-repo>
-cd Projet-DevOps
+git clone git@github.com:Choetsu/flask-app.git
+cd flask-app
 ```
 
 ### Configuration Azure CLI :

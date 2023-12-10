@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: flask-app-deployment
+    namespace: default
+    labels:
+        app: flask
+spec:
+    selector:
+        matchLabels:
+            app: flask
+    template:
+        metadata:
+            labels:
+                app: flask
+        spec:
+            containers:
+                - name: flask-app
+                  image: acrrgesgiamallahchemlal.azurecr.io/samples/myapp:latest
+                  ports:
+                      - containerPort: 8000
